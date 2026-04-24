@@ -1,0 +1,24 @@
+#Project Setup and Run Instructions
+
+#Prerequisites:
+    1. Java Development Kit (JDK) installed (version 21 or higher).
+    2. Apache Maven installed.
+    3. An IDE (like IntelliJ IDEA, Eclipse, or VS Code) for code editing and project management.
+#
+    git clone https://github.com/Ekallavya/spring-boot-soap-webservices.git
+    cd spring-boot-soap-webservices
+    open the project in your preferred IDE.
+    select  pom.xml ,click on the right mouse button and select "Add as Maven Project" (if using IntelliJ IDEA) or "Maven > Update Project" (if using Eclipse) to import the project dependencies.
+
+
+#Buld the application
+    mvn clean install
+#Run the application
+    java -jar target/sb-soap-webservice-publisher.jar
+#verify wsdl endpoint
+   http://localhost:8080/api/ws/loanEligibility.wsdl
+   ensure that the WSDL is accessible and correctly describes the SOAP service.
+#SOAP UI Testing
+    1. Create a new SOAP project in SOAP UI and provide the WSDL URL (http://localhost:8080/api/ws/loanEligibility.wsdl).
+    2. SOAP UI will generate the necessary request templates based on the WSDL.
+    3. Use the generated request template to send a request to the SOAP endpoint and verify the response.
