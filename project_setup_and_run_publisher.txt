@@ -5,7 +5,7 @@
     2. Apache Maven installed.
     3. An IDE (like IntelliJ IDEA, Eclipse, or VS Code) for code editing and project management.
 #
-    git clone https://github.com/Ekallavya/spring-boot-soap-webservices.git
+    git clone https://github.com/Ekallavya/sb-soap-webservice-publisher.git
     cd spring-boot-soap-webservices
     open the project in your preferred IDE.
     select  pom.xml ,click on the right mouse button and select "Add as Maven Project" (if using IntelliJ IDEA) or "Maven > Update Project" (if using Eclipse) to import the project dependencies.
